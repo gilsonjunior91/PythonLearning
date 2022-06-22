@@ -49,3 +49,5 @@ while (opcao != '5'):
 
     elif (opcao == '5'):
         print("Até mais !\n")
+    else:
+        print("Opção Inválida!")
