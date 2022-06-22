@@ -1,8 +1,6 @@
 #cadastro de bioimpedância
 
-from datetime import date
-
-print("\t\tSEJA BEM VINDO AO SISTEMA ABREC DE IMPEDÂNCIA")
+print("\t\tSEJA BEM VINDO AO SISTEMA DE IMPEDÂNCIA")
 
 print("\n*******CADASTRO*******\n")
 
@@ -12,7 +10,7 @@ nome = input("Digite o seu nome: ")
 idade = int(input("Digite sua idade: "))
 altura = float(input("Digite a sua altura: "))
 peso = float(input("Digite o seu peso: "))
-# sexo = input("Digite o sexo [M]-MASCULINO OU [F]-FEMININO: ")
+sexo = input("Digite o sexo [M]-MASCULINO OU [F]-FEMININO: ")
 
 imc = peso / altura ** 2
 
@@ -40,7 +38,6 @@ if Mg > 0.0 or Mg <=1.0 and Mm > 0.0 or Mm <= 1.0:
     indiceGorda = peso * (massaGorda/100)
     indiceMagra = peso - indiceGorda
     gorduraCorporal = massaGorda / peso * 100
-#     pesoIdeal = indiceMagra / 1 - (gorduraCorporal/100)
 else:
     print("Valores fora dos padrões aceitavéis.")
 
