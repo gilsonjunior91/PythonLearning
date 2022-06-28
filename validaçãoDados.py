@@ -13,7 +13,7 @@ while True:
 
 while True:
     idade = int(input("\nDIGITE SUA IDADE: "))
-    if idade > 0 and idade < 150:
+    if idade < 0 or idade > 150:
         print("\nIDADE FORA DOS PADRÕES ACEITÁVEIS!\n")
     else:
         print("\nSALVO!\n")
