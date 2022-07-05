@@ -133,109 +133,34 @@ while opcao != 'x' or opcao != 'X':                                        #ÍNI
         escolha = int(input("DIGITE SUA A OPÇÃO DESEJADA: "))
         if escolha == 1:                                        #ÍNICIO DA CONDICIONAL [ENTRADAS] [RELATÓRIOS]
             if contEntrada > 0:
-                if cad and can and lap and bor and reg > 0:
+                if cad or can or lap or bor or reg > 0:
                     print("\tCÓDIGO || PRODUTO")
                     print("\t  [10] ||[CADERNO] = ", cad)
                     print("\t  [20] ||[CANETA] = ", can)
                     print("\t  [30] ||[LÁPIS] = ", lap)
                     print("\t  [40] ||[BORRACHA] = ", bor)
                     print("\t  [50] ||[RÉGUA] = ", reg)
-                elif cad > cad2:
-                    print("\tCÓDIGO || PRODUTO")
-                    print("\t  [10] ||[CADERNO] = ", cad)
-                elif can > cad2:
-                    print("\tCÓDIGO || PRODUTO")
-                    print("\t  [20] ||[CANETA] = ", can)
-                elif lap > lap2:
-                    print("\tCÓDIGO || PRODUTO")
-                    print("\t  [30] ||[LÁPIS] = ", lap)
-                elif bor > bor2:
-                    print("\tCÓDIGO || PRODUTO")
-                    print("\t  [40] ||[BORRACHA] = ", bor)
-                elif reg > reg2:
-                    print("\tCÓDIGO || PRODUTO")
-                    print("\t  [50] ||[RÉGUA] =", reg)
-            #    if cad > 0 and can > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [10] ||[CADERNO] = ", cad)
-            #        print("\t  [20] ||[CANETA] = ", can)
-            #    if cad and lap > 0:
-            #        print("\tCÓDIGO || PRODUTO\n")
-            #        print("\t  [10] ||[CADERNO] = ", cad)
-            #        print("\t  [30] ||[LÁPIS] = ", lap)
-            #    if cad and bor > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [10] ||[CADERNO] = ", cad)
-            #        print("\t  [40] ||[BORRACHA] = ", bor)
-            #    if cad and reg > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [10] ||[CADERNO] = ", cad)
-            #        print("\t  [50] ||[RÉGUA] =", reg)
-            #    if can and lap > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [20] ||[CANETA] = ", cad)
-            #        print("\t  [30] ||[LÁPIS] =", reg)
-            #    if can and bor > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [20] ||[CANETA] = ", cad)
-            #        print("\t  [40] ||[BORRACHA] = ", bor)
-            #    if can and reg > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [20] ||[CANETA] = ", cad)
-            #        print("\t  [50] ||[RÉGUA] =", reg)
-            #    if lap and bor > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [30] ||[LÁPIS] =", reg)
-            #        print("\t  [40] ||[BORRACHA] = ", bor)
-            #    if lap and reg > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [30] ||[LÁPIS] =", reg)
-            #        print("\t  [50] ||[RÉGUA] =", reg)
-            #    if bor and reg > 0:
-            #        print("\tCÓDIGO || PRODUTO")
-            #        print("\t  [40] ||[BORRACHA] =", reg)
-            #        print("\t  [50] ||[RÉGUA] =", reg)
-            #    if lap and bor > 0:
-            #        print("\t  [30] ||[LÁPIS] = ", lap)
-            #        print("\t  [40] ||[BORRACHA] = ", bor)
-                else:
-                    if cad and can and lap > cad2 and can2 and lap2:
-                        print("\tCÓDIGO || PRODUTO")
-                        print("\t  [10] ||[CADERNO] = ", cad)
-                        print("\t  [20] ||[CANETA] = ", can)
-                        print("\t  [30] ||[LÁPIS] = ", lap)
-                    elif can and lap and bor > can2 and lap2 and bor2:
-                        print("\tCÓDIGO || PRODUTO")
-                        print("\t  [20] ||[CANETA] = ", can)
-                        print("\t  [30] ||[LÁPIS] = ", lap)
-                        print("\t  [40] ||[BORRACHA] = ", bor)
-                    elif lap and bor and reg > lap2 and bor2 and reg2:
-                        print("\tCÓDIGO || PRODUTO")
-                        print("\t  [30] ||[LÁPIS] = ", lap)
-                        print("\t  [40] ||[BORRACHA] = ", bor)
-                        print("\t  [50] ||[RÉGUA] = ", reg)
-                    elif cad and can and lap and bor > cad2 and can2 and lap2 and bor2:
-                        print("\tCÓDIGO || PRODUTO")
-                        print("\t  [10] ||[CADERNO] = ", cad)
-                        print("\t  [20] ||[CANETA] = ", can)
-                        print("\t  [30] ||[LÁPIS] = ", lap)
-                        print("\t  [40] ||[BORRACHA] = ", bor)
-                    elif can and lap and bor and reg > can2 and lap2 and bor2 and reg2:
-                        print("\tCÓDIGO || PRODUTO")
-                        print("\t  [20] ||[CANETA] = ", can)
-                        print("\t  [30] ||[LÁPIS] = ", lap)
-                        print("\t  [40] ||[BORRACHA] = ", bor)
-                        print("\t  [50] ||[RÉGUA] = ", reg)
+                    breakpoint                
             else:
                 print("\nNÃO HOUVE ENTRADA!\n")
+                breakpoint
         elif escolha == 2:                                        #OPÇÃO [SAÍDA] DO SUBMENU RELATÓRIOS.
-            if contSaida < contEntrada :
+            if contSaida > contEntrada :
                 print("\tCÓDIGO || PRODUTO\n")
                 print("\t  [10] ||[CADERNO] = ", cad)
                 print("\t  [20] ||[CANETA] = ", can)
                 print("\t  [30] ||[LÁPIS] = ", lap)
                 print("\t  [40] ||[BORRACHA] = ", bor)
                 print("\t  [50] ||[RÉGUA] = ", reg)
+                breakpoint
+            elif contSaida < contEntrada:
+                print("\tCÓDIGO || PRODUTO\n")
+                print("\t  [10] ||[CADERNO] = ", cad)
+                print("\t  [20] ||[CANETA] = ", can)
+                print("\t  [30] ||[LÁPIS] = ", lap)
+                print("\t  [40] ||[BORRACHA] = ", bor)
+                print("\t  [50] ||[RÉGUA] = ", reg)
+                breakpoint
             else:
                 print("\nNÃO HOUVE SAÍDAS.")
         elif escolha == 3:                                         #OPÇÃO [VOLTAR] DO SUBMENU RELATÓRIOS.
